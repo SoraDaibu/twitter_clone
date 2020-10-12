@@ -25,7 +25,9 @@ production:
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # https://railsguides.jp/configuring.html#データベース接続をプールする
+  # 7章の終わりにProd環境で、ユーザ登録をしようとしたら、エラーが出たから、DBを7章の終わりで指定していた
+  #「文字列」ではなく、以下のDB(デフォであった)ものにした。　とりあえず物を作る&理解をすることが最優先課題なので、先に進むことにする。
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: sample_app_production
+  database: db/production.sqlite3
   username: sample_app
   password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
