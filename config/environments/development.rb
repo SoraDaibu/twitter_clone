@@ -61,4 +61,12 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # Cloud9 への接続を許可する
   config.hosts.clear
+
+  config.action_mailer.raise_delivery_errors = false
+
+  host = 'localhost:3002'                     # ローカル環境
+  # localhostで開発している場合は以下を適応すべき
+  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+
+
 end
