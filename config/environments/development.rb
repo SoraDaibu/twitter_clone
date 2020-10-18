@@ -64,7 +64,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = false
 
-  host = 'localhost:3002'                     # ローカル環境
+  host = 'localhost:3000'                     # ローカル環境
   # localhostで開発している場合は以下を適応すべき
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
