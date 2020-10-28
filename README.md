@@ -7,7 +7,7 @@ https://sample-app-sora-rails.herokuapp.com/
 - ログイン(PW、CookieのHush化実装済み)
 - アカウント認証(登録確認メールの送信)
 - ツイート(140字まで)
-- フォロー(Ajax)
+- フォロー/アンフォロー(Ajax)
 - Following, Followerの表示
 
 ■ テスト
